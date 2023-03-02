@@ -43,7 +43,6 @@ fn list_commits(repo_path: String, time_range: Range<i64>) -> Result<Vec<RepoAnd
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    #[arg(short, long)]
     repositories: Vec<String>,
 
     #[arg(short, long)]
